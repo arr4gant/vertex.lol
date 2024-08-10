@@ -1,0 +1,27 @@
+
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/2yPMDCGd"))()
+
+local Window = Library:CreateWindow("vertex.lol | choose your option.", Vector2.new(300, 300), Enum.KeyCode.RightShift)
+local AkaliNotif =
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))()
+    
+local Notify = AkaliNotif.Notify
+
+local MiscTab = Window:CreateTab("Misc")
+
+local testSection = MiscTab:CreateSector("Misc", "left")
+
+
+testSection:AddButton(
+    "Load Vertex.lol target aim",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/arr4gant/vertex.lol/main/targetaim",true))()
+    end
+)
+
+testSection:AddButton(
+    "Load Vertex.lol target aim for mobile",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/arr4gant/vertex.lol/main/targetaimctool",true))()
+    end
+)
